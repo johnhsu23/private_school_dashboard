@@ -1,0 +1,2 @@
+[{"label": "At Advanced", "code": "ALC:AD"}, {"label": "At or above Proficient", "code": "ALC:AP"}, {"label": "At or above Basic", "code": "ALC:AB"}, {"label": "Compared to base year", "code": "NL"},
+{"label": "Compared to most recent year", "code": "AL"}]

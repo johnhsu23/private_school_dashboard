@@ -1,0 +1,7 @@
+﻿VarName,Value,Language,Stub,Label,Response_Weight
+"PARED   ",1,1033,"Some HS ",Did not finish high school,NULL
+"PARED   ",2,1033,"Grad HS ",Graduated high school,NULL
+"PARED   ",3,1033,"Post HS ",Some education after high school,NULL
+"PARED   ",4,1033,Grad col,Graduated college,NULL
+"PARED   ",5,1033,"Unknown ",Unknown,NULL
+"PARED   ",999,1033,"Missing ",Missing,NULL

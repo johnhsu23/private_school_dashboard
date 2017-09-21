@@ -1,0 +1,267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+	<title>
+		<asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server">
+			National Center for Education Statistics (NCES)
+		</asp:ContentPlaceHolder>
+	</title>
+    <meta charset="UTF-8">
+    
+	<%-- Font --%>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <%-- CSS --%>
+	<link rel="stylesheet" type="text/css" href="/shared/shared/Bootstrap3/css/bootstrap3.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/shared/shared/Bootstrap3/css/bootstrap2-custom.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/shared/shared/Bootstrap3/css/sp-responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="/shared/shared/Bootstrap3/css/bootstrap3-custom.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/adminonly/themes/redesign_2015/header/header.css"/>
+	<link rel="stylesheet" type="text/css" href="/adminonly/themes/redesign_2015/css/NRC_redesign_2015.css"/>
+	<link rel="stylesheet" type="text/css" href="/adminonly/themes/redesign_2015/css/NRC_redesign_2015_small.css" media="(max-width: 1023px)"/>
+	<link rel="stylesheet" type="text/css" href="/adminonly/themes/theme_main/css/NRCUserSelectableStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="/adminonly/themes/redesign_2015/css/NRC_Redesign_UserSelectableStyle.css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />	
+	 	
+    <%-- JavaScript --%>
+	<script src="/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.cookie.js" type="text/javascript"></script>
+	<script src="/shared/shared/Bootstrap3/js/bootstrap3.min.js" type="text/javascript"></script>
+	<script src="/shared/shared/Bootstrap3/js/bootstrap3-custom.js" type="text/javascript"></script>
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="/shared/shared/Bootstrap3/js/respond.min.js"></script>
+		<script type="text/javascript" src="/shared/shared/Bootstrap3/js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="/adminonly/themes/redesign_2015/scripts/jquery-accessibleMegaMenu.js" type="text/javascript"></script>
+	<script src="/adminonly/themes/redesign_2015/header/header.js" type="text/javascript"></script>
+	<script src="/adminonly/themes/redesign_2015/scripts/NRC_redesign_2015.js" type="text/javascript"></script>
+	<script src="/adminonly/themes/redesign_2015/scripts/nde_dropdown_selector.js" type="text/javascript"></script>
+	<script src="/adminonly/scripts/urlDecode.js" type="text/javascript"></script>
+
+			
+	<%-- fancybox2 --%>
+	<link rel="stylesheet" href="/shared/shared/fancybox2/source/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/shared/shared/fancybox2/source/helpers/jquery.fancybox-buttons.css?v=1.0.2" type="text/css" media="screen" />
+	<link rel="stylesheet" href="/shared/shared/fancybox2/source/helpers/jquery.fancybox-thumbs.css?v=2.0.6" type="text/css" media="screen" />
+	<script type="text/javascript" src="/shared/shared/fancybox2/lib/jquery-1.7.2.min.js"></script>	
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/jquery.fancybox.js?v=2.0.6"></script>
+	<script type="text/javascript" src="/shared/shared/fancybox2/lib/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/helpers/jquery.fancybox-buttons.js?v=1.0.2"></script>
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/helpers/jquery.fancybox-media.js?v=1.0.0"></script>	
+	<script type="text/javascript" src="/shared/shared/fancybox2/source/helpers/jquery.fancybox-thumbs.js?v=2.0.6"></script>
+	<script type="text/javascript" src="/shared/shared/fancybox2/naepfancybox.js"></script>
+	<script type="text/javascript" src="/adminonly/scripts/GlossaryMigratedPageFix.js"></script>
+	<script type="text/javascript" src="/adminonly/themes/theme_main/scripts/nrcmain.js"></script>		
+
+    <%-- swfobject --%>
+    <script src="/shared/shared/js/swfobject.js" type="text/javascript"></script>
+	
+	<%-- Accordion --%>
+	<!--<script type="text/javascript" src="/shared/shared/js/jquery-ui-1.9.2.accordion.min.js"></script>-->
+	
+	<style type="text/css">
+		/* override fancybox style */
+		.fancybox-wrap { overflow: visible !important; }
+	</style>
+	<script type="text/javascript">		
+	    jQuery(function () {		
+			// Call DocumentReadyCall() function
+			// located in /adminonly/themes/redesign_2015/scripts/NRC_redesign_2015.js	
+			DocumentReadyCall();
+			
+			// remove saved complex 508 table header metadata from SP.
+			$("table .complex-table-headers-metadata").remove();
+			
+			// span tag around of .BackToTop that is added via reusable content in CF.
+			// this span tag prevents from align to right in IE7.
+			// so remove the span.
+			var backtotop = $(".BackToTop").parent();	//<p align="right"> tag
+			if (backtotop.parent().is("span.ms-reusableTextView")) {
+				backtotop.unwrap();
+			}
+	    });
+	</script>
+	
+    <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder runat="server" ID="PlaceHolderPageHead">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+	<!--  nf <div class="nrc_bodyContainer"> -->
+		<!-- Begin header -->
+		<!-- top anchor -->
+		<a name="top"></a>		
+		<!--#include file="/adminonly/themes/redesign_2015/header/header.inc"-->
+		<header class="header">
+			<div class="header__inner l-constrain">
+				<div class="site-name-wrapper">
+					<h1 class="site-name"><a class="site-name__link" href="#/" title="Home" rel="home">Achievement Gaps Dashboard</a></h1>
+					<div class="print">
+						<a class="print__link" title="Print this page" aria-label="Print this page" href="#" data-print="">Print</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End of header -->
+		
+		<form id="form1" runat="server">
+			<asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>	
+
+			<div id="body" class="nrc_body">
+				<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server"/>						
+			</div>
+			
+			<!-- Begin footer -->
+			<div id="footer" class="nrc_footer">
+				<div class="footer-container">
+					<div class="tabs">
+						<ul class="tab-links">
+							<li class="tab1 active"><button type="button" name="tab1">Download Data Tables</button></li>
+							<li class="tab2"><button type="button" name="tab2">Customize Data Tables</button></li>
+						</ul>
+						<div class="tab-content">									
+							<div id="tab1" class="tab tab1 active">
+								<div class="nde-data-filter-content">
+									<div class="nde-data-filter-wrapper">
+										Download data summarizing:<br/>							        		
+										<ul>
+											<li>participation rates</li>
+											<li>inclusion rates and other information about students with disabilities (SD) and English language learners (ELL)</li>
+										</ul>
+										<div class="nde-data-filter subject">
+											<label for="subject" class="screen-reader-only">Subject</label>
+											<span class="select-default" title="MATHNS"></span>
+											<select id="downloadsubject" name="subject" class="dropdown">
+												<option value="CIV">Civics</option>
+												<option value="GEO">Geography</option>
+												<option value="MATHNS" class="default-text">Mathematics (National & State)</option>
+												<option value="MATHTUDA">Mathematics (TUDA)</option>
+												<option value="MATH12">Mathematics (Grade 12)</option>
+												<option value="READNS">Reading (National & State)</option>
+												<option value="READTUDA">Reading (TUDA)</option>
+												<option value="READ12">Reading (Grade 12)</option>
+												<option value="SCI">Science</option>
+												<option value="TEL">Technology & Engineering Literacy</option>
+												<option value="HIS">U.S. History</option>
+												<option value="VOC">Vocabulary</option>
+											</select>
+										</div>
+										<div class="btn-download-table">
+											<a href="#" class="button" onclick="downloadData('xls')">excel file</a><a href="#" class="button" onclick="downloadData('pdf')">pdf file</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- End of #tab1 -->
+								<div id="tab2" class="tab tab2">
+									<div class="nde-data-filter-content">
+										<div class="nde-data-filter-wrapper">
+											Generate custom tables by selecting criteria below:<br/>
+											<div class="nde-data-filter jurisdiction">
+												<label for="jurisdiction" class="screen-reader-only">Jurisdiction</label>
+												<span title="National" class="select-default"></span>
+												<select id="jurdid" name="jurisdiction" class="dropdown">
+													<option value="0">Select a Jurisdiction</option>
+													<option value="National" class="default-text">National</option>
+													<option value="All States">All States</option>
+													<option value="All Districts">All Districts</option>
+												</select>
+											</div>
+											<div class="nde-data-filter grade">
+												<label for="grade" class="screen-reader-only">Grade</label>
+												<span title="1" class="select-default"></span>
+												<select id="gradeid" name="grade" class="dropdown">
+													<option value="0">Select a Grade</option>
+													<option value="1" class="default-text">Grade 4</option>
+													<option value="2">Grade 8</option>
+													<option value="3">Grade 12</option>
+												</select>
+											</div>
+											<div class="nde-data-filter subject">
+												<label for="subject" class="screen-reader-only">Subject</label>
+												<span title="4" class="select-default"></span>
+												<select name="subject" id="subjectid" class="dropdown">
+													<option value="0">Select a Subject</option>
+													<option value="1">Civics</option>
+													<option value="2">Economics</option>
+													<option value="3">Geography</option>
+													<option value="4" class="default-text">Mathematics</option>
+													<option value="5">Music</option>
+													<option value="6">Reading</option>
+													<option value="7">Science</option>
+													<option value="8">Technology & Engineering Literacy</option>
+													<option value="9">U.S. History</option>
+													<option value="10">Visual Arts</option>
+													<option value="11">Vocabulary</option>
+													<option value="12">Writing</option>													
+												</select>
+											</div>
+											<div class="nde-data-filter statistic">
+												<label for="statistic" class="screen-reader-only">Statistic</label>
+												<span title="2" class="select-default"></span>
+												<select id="statid" name="statistic" class="dropdown">
+													<option value="1" class="default-text">Average Score</option>
+													<option value="2">Percentages</option>
+													<option value="3LC_BB,ALC_AB,ALC_AP,ALC_AD">Achievement Level</option>
+													<option value="PC_P1,PC_P2,PC_P5,PC_P7,PC_P9">Percentiles</option>
+												</select>
+											</div>
+											<div class="nde-data-filter variable">
+												<label for="variable" class="screen-reader-only">Variable</label>
+												<span title="1" class="select-default">Overall</span>
+												<select id="variid" name="variable" class="dropdown">
+													<option value="1" class="default-text">Overall</option>
+													<option value="2">Gender</option>
+													<option value="3">Race/Ethnicity</option>
+													<option value="4">Region</option>
+													<option value="5">Type of School</option>
+													<option value="6">Family Income</option>
+													<option value="7">Parental Education</option>
+													<option value="8">Students with Disabilities</option>
+													<option value="9">English Language Learners</option>
+												</select>							            	
+											</div>
+											<div class="btn-customize-table">
+												<a href="#" class="button" onclick="return showtable()">create table</a>
+											</div>
+										</div>
+									</div>							            
+								</div><!-- End of #tab2 -->							        
+							<div class="nde-logo">
+								<img src="/adminonly/themes/redesign_2015/images/footer-ndequick.png" alt="NDE Quick View"/></div>
+						</div><!-- End of .tab-content -->	
+					</div><!-- End of .tabs -->
+					<div class="fixed-tab">
+						<div class="tab-link">Related Links</div>
+						<div class="tab-content tab">
+							<ul>
+								<li><a href="/about.aspx">About The Nation's Report Card</a></li>
+								<li><a href="http://nces.ed.gov/nationsreportcard/about/">About National Assessment of Educational Progress (NAEP)</a></li>
+								<li><a href="/contacts.aspx">Contacts</a></li>
+								<li><a href="/faq.aspx">FAQs</a></li>
+								<li><a href="/glossary.aspx?ispopup=false">Glossary</a></li>
+							</ul>
+							<div>
+								FOLLOW US
+								<a class="icon_footer_twitter" title="Follow us on Twitter" aria-label="Follow us on Twitter" href="https://twitter.com/naep_nces" data-twitter=""><img src="/adminonly/themes/redesign_2015/images/icon-twitter.png"/></a>
+								<a class="icon_footer_facebook" title="Follow us on Facebook" aria-label="Follow us on Facebook" href="https://www.facebook.com/NationalAssessmentofEducationalProgress" data-facebook="">	<img src="/adminonly/themes/redesign_2015/images/icon-facebook-inv.png"/></a>
+							</div>							
+						</div>
+					</div>
+				</div><!-- End of .footer-container -->  
+			</div><!-- End of #footer -->		
+		
+			<!-- Handle Search "enter" key and back button -->
+			<input type="text" name="__spDummyText1" style="display:none;" size="1"/>
+			<input type="text" name="__spDummyText2" style="display:none;" size="1"/>
+			<asp:ContentPlaceHolder id="ContentPlaceHolderFinally" runat="server"/>
+		</form>
+	</div>
+	<script type="text/javascript" src="/js/federated-analytics.all.min.js"></script>
+</body>
+
+</html>

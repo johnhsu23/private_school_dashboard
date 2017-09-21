@@ -1,0 +1,8 @@
+﻿VarName,Value,Language,Stub,Label,Response_Weight
+"RACE    ",1,1033,"White   ",White (not Hispanic),NULL
+"RACE    ",2,1033,"Black   ",Black (not Hispanic),NULL
+"RACE    ",3,1033,Hispanic,Hispanic,NULL
+"RACE    ",4,1033,Asian/PI,Asian American or Pacific Islander,NULL
+"RACE    ",5,1033,Amer Ind,American Indian or Alaska Native,NULL
+"RACE    ",6,1033,"Unclass ",Unclassified,NULL
+"RACE    ",999,1033,"Missing ",Missing,NULL

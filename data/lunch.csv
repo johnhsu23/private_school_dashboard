@@ -1,0 +1,8 @@
+﻿VarName,Value,Language,Stub,Label,Response_Weight
+"SLUNCH  ",1,1033,NOT ELLG,Not eligible,NULL
+"SLUNCH  ",2,1033,"REDUCED ",Reduced price,NULL
+"SLUNCH  ",3,1033,"FREE    ",Free,NULL
+"SLUNCH  ",4,1033,"NO INFO ",Info not available,NULL
+"SLUNCH  ",5,1033,"REFUSAL ",School refused,NULL
+"SLUNCH  ",6,1033,NOT PART,Not participating,NULL
+"SLUNCH  ",999,1033,"Missing ",Missing,NULL

@@ -1,0 +1,4 @@
+﻿VarName,Value,Language,Stub,Label,Response_Weight
+"GENDER  ",1,1033,"Male    ",Male,NULL
+"GENDER  ",2,1033,"Female  ",Female,NULL
+"GENDER  ",999,1033,"Missing ",Missing,NULL

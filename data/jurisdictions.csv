@@ -1,0 +1,93 @@
+﻿Jurisdiction,ParentNAEP,ParentCensus,Level,Language,Label,Rank,Description,IsRollup,FootnoteCode,AVSigTestSEMethod
+AK,R4,C4,1,1033,Alaska,2,NULL,0,0,Standard
+AL,R2,C3,1,1033,Alabama,1,NULL,0,0,Standard
+AR,R2,C3,1,1033,Arkansas,4,NULL,0,0,Standard
+AS,NULL,NULL,3,1033,American Samoa,4,NULL,0,0,Standard
+AZ,R4,C4,1,1033,Arizona,3,NULL,0,0,Standard
+C1,NULL,NP,4,1033,Northeast (Census),1,"Includes public schools in Connecticut, Maine, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, and Vermont.",0,0,Standard
+C2,NULL,NP,4,1033,Midwest (Census),2,"Includes public schools in Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, Ohio, South Dakota, and Wisconsin.",0,0,Standard
+C3,NULL,NP,4,1033,South (Census),3,"Includes public schools in Alabama, Arkansas, Delaware, District of Columbia, Florida, Georgia, Kentucky, Louisiana, Maryland, Mississippi, North Carolina, Oklahoma, South Carolina, Tennessee, Texas, Virginia, and West Virginia.",0,0,Standard
+C4,NULL,NP,4,1033,West (Census),4,"Includes public schools in Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oregon, Utah, Washington, and Wyoming.",0,0,Standard
+CA,R4,C4,1,1033,California,5,NULL,0,0,Standard
+CO,R4,C4,1,1033,Colorado,6,NULL,0,0,Standard
+CT,R1,C1,1,1033,Connecticut,7,NULL,0,0,Standard
+DC,R1,C3,1,1033,District of Columbia,9,To be used when comparing District of Columbia to states,0,0,Standard
+DD,NULL,NULL,1,1033,DoDEA/DDESS,53,Department of Defense Education Activity/Department of Defense Domestic Dependent Elementary and Secondary Schools,0,0,Standard
+DE,R1,C3,1,1033,Delaware,8,NULL,0,0,Standard
+DO,NULL,NULL,1,1033,DoDEA/DoDDS,54,Department of Defense Education Activity/Department of Defense Dependents Schools (overseas),0,0,Standard
+DS,NT,NT,1,1033,DoDEA,10,Department of Defense Education Activity,0,0,Standard
+FL,R2,C3,1,1033,Florida,11,NULL,0,0,Standard
+GA,R2,C3,1,1033,Georgia,12,NULL,0,0,Standard
+GU,NULL,NULL,3,1033,Guam,5,NULL,0,0,Standard
+HI,R4,C4,1,1033,Hawaii,13,NULL,0,0,Standard
+IA,R3,C2,1,1033,Iowa,17,NULL,0,0,Standard
+ID,R4,C4,1,1033,Idaho,14,NULL,0,0,Standard
+IL,R3,C2,1,1033,Illinois,15,NULL,0,0,Standard
+IN,R3,C2,1,1033,Indiana,16,NULL,0,0,Standard
+KS,R3,C2,1,1033,Kansas,18,NULL,0,0,Standard
+KY,R2,C3,1,1033,Kentucky,19,NULL,0,0,Standard
+LA,R2,C3,1,1033,Louisiana,20,NULL,0,0,Standard
+MA,R1,C1,1,1033,Massachusetts,23,NULL,0,0,Standard
+MD,R1,C3,1,1033,Maryland,22,NULL,0,0,Standard
+ME,R1,C1,1,1033,Maine,21,NULL,0,0,Standard
+MI,R3,C2,1,1033,Michigan,24,NULL,0,0,Standard
+MN,R3,C2,1,1033,Minnesota,25,NULL,0,0,Standard
+MO,R3,C2,1,1033,Missouri,27,NULL,0,0,Standard
+MS,R2,C3,1,1033,Mississippi,26,NULL,0,0,Standard
+MT,R4,C4,1,1033,Montana,28,NULL,0,0,Standard
+NC,R2,C3,1,1033,North Carolina,35,NULL,0,0,Standard
+ND,R3,C2,1,1033,North Dakota,36,NULL,0,0,Standard
+NE,R3,C2,1,1033,Nebraska,29,NULL,0,0,Standard
+NH,R1,C1,1,1033,New Hampshire,31,NULL,0,0,Standard
+NJ,R1,C1,1,1033,New Jersey,32,NULL,0,0,Standard
+NL,NT,NT,0,1033,Large city,4,Students from public schools in all districts participating and in all large central cities not participating in the urban district assessment. Typically used as a benchmark for urban districts in the way that national public is used for states.,0,0,Standard
+NM,R4,C4,1,1033,New Mexico,33,NULL,0,0,Standard
+NP,NT,NT,0,1033,National public,2,"Students from public schools only.  Includes charter schools; excludes Bureau of Indian Education schools and Department of Defense Education Activity schools. To be used when comparing national data to those of states, urban districts, or regions.",0,0,Standard
+NR,NT,NT,0,1033,National private,3,Students from private schools only,0,0,Standard
+NT,NULL,NULL,0,1033,National,1,All students from public and nonpublic schools,0,0,Standard
+NV,R4,C4,1,1033,Nevada,30,NULL,0,0,Standard
+NY,R1,C1,1,1033,New York,34,NULL,0,0,Standard
+OH,R3,C2,1,1033,Ohio,37,NULL,0,0,Standard
+OK,R4,C3,1,1033,Oklahoma,38,NULL,0,0,Standard
+OR,R4,C4,1,1033,Oregon,39,NULL,0,0,Standard
+PA,R1,C1,1,1033,Pennsylvania,40,NULL,0,0,Standard
+PR,NULL,NULL,3,1033,Puerto Rico,6,NULL,0,0,Standard
+R1,NP,NULL,4,1033,Northeast (NAEP),5,"Use discontinued after 2002.  Includes public schools in Connecticut, Delaware, District of Columbia, Maine, Maryland, Massachusetts, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, Vermont, and Virginia (D.C. metropolitan area only).",0,0,Standard
+R2,NP,NULL,4,1033,Southeast (NAEP),6,"Use discontinued after 2002.  Includes public schools in Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Tennessee, Virginia (outside the D.C. metropolitan area), and West Virginia.",0,0,Standard
+R3,NP,NULL,4,1033,Central (NAEP),7,"Use discontinued after 2002.  Includes public schools in Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, Ohio, South Dakota, and Wisconsin.",0,0,Standard
+R4,NP,NULL,4,1033,West (NAEP),8,"Use discontinued after 2002.  Includes public schools in Alaska, Arizona, California, Colorado, Hawaii, Idaho, Montana, Nevada, New Mexico, Oklahoma, Oregon, Texas, Utah, Washington, and Wyoming.",0,0,Standard
+RI,R1,C1,1,1033,Rhode Island,41,NULL,0,0,Standard
+SC,R2,C3,1,1033,South Carolina,42,NULL,0,0,Standard
+SD,R3,C2,1,1033,South Dakota,43,NULL,0,0,Standard
+TN,R2,C3,1,1033,Tennessee,44,NULL,0,0,Standard
+TX,R4,C3,1,1033,Texas,45,NULL,0,0,Standard
+UT,R4,C4,1,1033,Utah,46,NULL,0,0,Standard
+VA,R2,C3,1,1033,Virginia,48,NULL,0,0,Standard
+VI,NULL,NULL,3,1033,Virgin Islands,7,NULL,0,0,Standard
+VT,R1,C1,1,1033,Vermont,47,NULL,0,0,Standard
+WA,R4,C4,1,1033,Washington,49,NULL,0,0,Standard
+WI,R3,C2,1,1033,Wisconsin,51,NULL,0,0,Standard
+WV,R2,C3,1,1033,West Virginia,50,NULL,0,0,Standard
+WY,R4,C4,1,1033,Wyoming,52,NULL,0,0,Standard
+XA,GA,GA,2,1033,Atlanta,2,NULL,0,0,Standard
+XB,MA,MA,2,1033,Boston,5,NULL,0,0,Standard
+XC,IL,IL,2,1033,Chicago,7,NULL,0,0,Standard
+XD,CA,CA,2,1033,San Diego,22,NULL,0,0,Standard
+XE,FL,C3,2,1033,Duval County (FL),12,NULL,0,0,Standard
+XF,R4,C4,2,1033,Fresno,13,NULL,0,0,Standard
+XH,TX,TX,2,1033,Houston,15,NULL,0,0,Standard
+XI,R2,C3,2,1033,Miami-Dade,18,NULL,0,0,Standard
+XJ,R2,C3,2,1033,Jefferson County (KY),16,NULL,0,0,Standard
+XK,R3,C2,2,1033,Milwaukee,19,NULL,0,0,Standard
+XL,CA,CA,2,1033,Los Angeles,17,NULL,0,0,Standard
+XM,R1,C1,2,1033,Baltimore City,4,NULL,0,0,Standard
+XN,NY,NY,2,1033,New York City,20,NULL,0,0,Standard
+XO,FL,C3,2,1033,Hillsborough County (FL),14,NULL,0,0,Standard
+XP,R1,C1,2,1033,Philadelphia,21,NULL,0,0,Standard
+XQ,NM,C4,2,1033,Albuquerque,1,NULL,0,0,Standard
+XR,R3,C2,2,1033,Detroit,10,NULL,0,0,Standard
+XS,TX,C3,2,1033,Dallas,9,NULL,0,0,Standard
+XT,NC,NC,2,1033,Charlotte,6,NULL,0,0,Standard
+XU,TX,TX,2,1033,Austin,3,NULL,0,0,Standard
+XV,OH,OH,2,1033,Cleveland,8,NULL,0,0,Standard
+XW,R1,C3,2,1033,District of Columbia (DCPS),11,To be used when comparing District of Columbia to urban districts,0,131072,Standard
